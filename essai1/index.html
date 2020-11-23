@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>On va travailler avec jQuery</p>
+    <p class="maclasse">C'est mon premier paragraphe</p>
+    <div id="monid">One div</div>
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+        //jQuery(document).ready(function() {
+        //jQuery(function() {
+        $(function() {
+            // Du code en jQuery
+            $('p').css({
+                color: 'blue'
+            });
+            $('.maclasse').css({
+                color: 'red'
+            });
+            $('#monid').css({
+                    color: 'green',
+                    width: '150px',
+                    height: '150px',
+                    backgroundColor: 'yellow'
+                })
+                //alert("jQuery est prêt!");
+                //console.log("jQuery est prêt!");
+        })
+    </script>
+</body>
+
+</html>
